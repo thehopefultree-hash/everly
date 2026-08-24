@@ -1,24 +1,25 @@
-# EVERLY Wishes Website V2.2 Final Warm
+# EVERLY Wishes Website V2
 
-Static one-page relationship-led website.
+Relationship-led direction.
 
-## Files
+## Main changes
 
-Upload all files and folders to the root of the GitHub repository.
+- CTA changed to `Start an EVERLY Conversation`
+- Removed public pricing and hard package cards
+- First step is conversation-led
+- Wishes Book positioned as an eventual personal record, not a hard package
+- New May Lim portrait included
+- Social share page and social preview image included
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `share.html`
-- `assets/`
+## Upload to GitHub
 
-## Direction
+Upload/replace everything in the repo root:
 
-- Relationship-led
-- Conversation-first
-- No public pricing
-- No package cards
-- Uses May Lim hero portrait
-- Uses separate May Lim photo in Meet May section
-- Uses conversation and Wishes Book visuals
-- Updated social share image
+- index.html
+- style.css
+- script.js
+- share.html
+- README.md
+- assets/
+
+Cloudflare Pages should redeploy automatically after commit.
