@@ -626,3 +626,195 @@ details p{margin:0;padding:0 48px 24px 6px;color:var(--muted)}
   .hero h1{font-size:clamp(2.85rem, 11.5vw, 4rem);}
   .hero .lead{font-size:1.04rem;}
 }
+
+
+/* V2.1 warm conversation visual direction */
+.hero{
+  min-height: calc(100vh - 94px);
+  align-items:center;
+}
+.hero-visual{
+  position:relative;
+}
+.hero-visual img{
+  min-height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-visual::after{
+  content:"";
+  position:absolute;
+  left:-1px;
+  right:-1px;
+  bottom:-1px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),var(--gold));
+}
+.hero-visual::before{
+  content:"";
+  position:absolute;
+  right:-7px;
+  bottom:-7px;
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  background:var(--gold);
+  z-index:2;
+}
+
+.conversation-section{
+  display:grid;
+  grid-template-columns:minmax(260px,.76fr) minmax(420px,1.5fr);
+  gap:clamp(36px,5vw,72px);
+  align-items:center;
+  background:var(--cream-2);
+  border-top:1px solid rgba(234,220,201,.6);
+}
+.conversation-copy{
+  max-width:430px;
+  justify-self:end;
+}
+.conversation-copy h2{
+  margin:0 0 28px;
+  font-family:"Cormorant Garamond",serif;
+  color:var(--plum);
+  font-size:clamp(2.7rem,4.5vw,4.45rem);
+  line-height:.96;
+  letter-spacing:-.035em;
+}
+.conversation-copy h2::after{
+  content:"";
+  display:block;
+  width:54px;
+  height:1px;
+  background:var(--gold);
+  margin-top:22px;
+}
+.conversation-copy p{
+  margin:0 0 14px;
+  color:var(--muted);
+}
+.conversation-image{
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(234,220,201,.85);
+}
+.conversation-image img{
+  width:100%;
+  height:clamp(330px,31vw,430px);
+  object-fit:cover;
+  object-position:center;
+}
+
+.book-section{
+  border-radius:0;
+  background:linear-gradient(110deg,var(--cream-2),#f6eff8);
+}
+.book-section .book-image{
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.book-copy h2::first-line{
+  color:var(--plum);
+}
+
+.may-section{
+  grid-template-columns:minmax(0,1fr) minmax(260px,.46fr);
+}
+.may-signature-card{
+  align-self:center;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:34px;
+  background:linear-gradient(160deg,#fffdf8,#f7eff8);
+  box-shadow:var(--shadow);
+  color:var(--muted);
+}
+.signature-name{
+  font-family:"Cormorant Garamond",serif;
+  color:var(--plum);
+  font-size:3rem;
+  line-height:1;
+  margin:0 0 6px!important;
+}
+.signature-line{
+  margin-top:24px!important;
+  color:var(--plum);
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.55rem;
+  line-height:1.15;
+}
+
+/* Put May back into the mobile hero now that the portrait is stronger. */
+@media (max-width:760px){
+  .hero{
+    display:flex!important;
+    flex-direction:column-reverse;
+    gap:2rem;
+    min-height:auto;
+    padding-top:2.1rem;
+    padding-bottom:3.2rem;
+    background:
+      radial-gradient(circle at 75% 12%, rgba(183,131,50,.14), transparent 34%),
+      var(--cream);
+  }
+  .hero::before{display:none!important;}
+  .hero-visual{
+    display:block!important;
+    width:100%;
+    border-radius:26px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid rgba(234,220,201,.85);
+  }
+  .hero-visual img{
+    min-height:0;
+    height:clamp(320px,92vw,440px);
+    width:100%;
+    object-fit:cover;
+    object-position:center top;
+  }
+  .hero-copy{width:100%;}
+  .hero h1{
+    font-size:clamp(2.85rem, 10.8vw, 4.1rem);
+    line-height:.98;
+  }
+  .hero .lead{
+    font-size:1rem;
+    line-height:1.62;
+  }
+  .conversation-section{
+    grid-template-columns:1fr;
+    gap:2rem;
+  }
+  .conversation-copy{
+    max-width:100%;
+    justify-self:start;
+  }
+  .conversation-copy h2{
+    font-size:clamp(2.55rem,10vw,3.9rem);
+  }
+  .conversation-image img{
+    height:260px;
+  }
+  .book-section{
+    grid-template-columns:1fr;
+  }
+  .may-section{
+    grid-template-columns:1fr;
+  }
+  .may-signature-card{
+    padding:28px;
+  }
+}
+@media (min-width:761px) and (max-width:1080px){
+  .conversation-section{
+    grid-template-columns:1fr;
+  }
+  .conversation-copy{
+    max-width:650px;
+    justify-self:start;
+  }
+}

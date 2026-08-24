@@ -23,3 +23,12 @@ Upload/replace everything in the repo root:
 - assets/
 
 Cloudflare Pages should redeploy automatically after commit.
+
+
+## V2.1 update
+
+- Added warm conversation image section with May speaking to another woman.
+- Kept May Lim portrait in hero across desktop, tablet and mobile.
+- Removed old blue placeholder photo from assets.
+- Kept relationship-led copy, no public pricing, no hard package cards.
+- Updated social share image.
