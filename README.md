@@ -35,3 +35,6 @@ V2.4: Social share image fixed with clearer layout and new image filename to red
 ## V2.6
 - Rebuilt social share image with EB Garamond + Inter pairing.
 - Cleaner premium WhatsApp preview: no button, no cramped text, no overlap.
+
+
+V2.7: Fixed desktop hero spacing, stable dark logo, cleaner Meet May image crop, and classy social share v27.
