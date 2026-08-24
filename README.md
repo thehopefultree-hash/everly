@@ -22,3 +22,6 @@ Upload all files and folders to the root of the GitHub repository.
 - Uses separate May Lim photo in Meet May section
 - Uses conversation and Wishes Book visuals
 - Updated social share image
+
+
+V2.4: Social share image fixed with clearer layout and new image filename to reduce WhatsApp cache issues.
