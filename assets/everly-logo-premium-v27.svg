@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title">
+<title>EVERLY Wishes</title>
+<defs>
+<style>
+.e{font-family: Georgia, 'Times New Roman', serif;font-size:58px;letter-spacing:31px;fill:#2b1649;font-weight:400}
+.w{font-family: Arial, Helvetica, sans-serif;font-size:22px;letter-spacing:19px;fill:#b78332;font-weight:700}
+.line{stroke:#b78332;stroke-width:3;stroke-linecap:round}
+.dot{fill:#b78332}
+</style>
+</defs>
+<text class="e" x="7" y="62">EVERLY</text>
+<line class="line" x1="0" y1="92" x2="132" y2="92"/>
+<text class="w" x="165" y="101">WISHES</text>
+<line class="line" x1="365" y1="92" x2="470" y2="92"/>
+<circle class="dot" cx="487" cy="92" r="10"/>
+</svg>
