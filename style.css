@@ -431,3 +431,87 @@ details p{margin:0;padding:0 48px 24px 6px;color:var(--muted)}
     max-height:360px;
   }
 }
+
+
+/* V1.4 mobile hero refinement
+   Desktop keeps the founder portrait in the hero.
+   Mobile removes the hero portrait so the opening feels cleaner and more premium
+   until a stronger portrait is available. The photo remains in the Meet May section. */
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 3.25rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .hero-grid,
+  .hero__inner,
+  .hero-content,
+  .hero-wrap {
+    gap: 1.75rem;
+  }
+
+  .hero-visual,
+  .hero-image,
+  .hero-photo,
+  .hero-portrait,
+  .hero-media {
+    display: none !important;
+  }
+
+  .hero-text,
+  .hero-copy,
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: clamp(3.05rem, 13vw, 4.7rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    margin-bottom: 1.55rem;
+  }
+
+  .hero .lead,
+  .hero-subtitle,
+  .hero-copy p {
+    font-size: 1.12rem;
+    line-height: 1.65;
+    max-width: 34rem;
+  }
+
+  .hero-actions,
+  .hero-buttons {
+    margin-top: 2rem;
+  }
+
+  .hero-reassurance,
+  .reassurance {
+    margin-top: 1.75rem;
+    align-items: flex-start;
+  }
+}
+
+/* V1.4 tablet fix for Wishes Book section: keep the book visual contained. */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .book-section,
+  .wishes-book,
+  .book-grid {
+    overflow: hidden;
+  }
+
+  .book-visual,
+  .book-image-wrap,
+  .book-mockup {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .book-visual img,
+  .book-image-wrap img,
+  .book-mockup img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

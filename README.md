@@ -42,3 +42,11 @@ Added an optional personal message add-ons section with a placeholder for a futu
 - Added `share.html` for a cleaner client/social preview link.
 - Improved mobile hero photo spacing/cropping.
 - Adjusted tablet layout so the Wishes Book visual does not get cut off.
+
+
+## V1.4 update
+
+- Mobile hero refined: May Lim hero photo is hidden on mobile for a cleaner first impression.
+- May Lim photo remains in the Meet May section.
+- Social share page and social preview image remain included.
+- Tablet Wishes Book visual containment retained.
