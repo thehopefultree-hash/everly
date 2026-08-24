@@ -30,3 +30,8 @@ V2.4: Social share image fixed with clearer layout and new image filename to red
 ## V2.5
 - Rebuilt social share card: no text/photo overlap, cleaner WhatsApp preview.
 - Updated Open Graph image to assets/everly-social-share-v25.jpg.
+
+
+## V2.6
+- Rebuilt social share image with EB Garamond + Inter pairing.
+- Cleaner premium WhatsApp preview: no button, no cramped text, no overlap.
