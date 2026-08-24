@@ -606,3 +606,23 @@ details p{margin:0;padding:0 48px 24px 6px;color:var(--muted)}
     line-height: 1.62;
   }
 }
+
+
+/* V2 relationship-led refinements */
+.nav-cta, .button.primary { text-align:center; }
+.notice{
+  margin-top:28px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:18px 20px;
+  color:var(--muted);
+  background:#fffdf8;
+  font-size:14px;
+}
+@media (min-width: 761px){
+  .hero .hero-visual{display:block!important;}
+}
+@media (max-width: 760px){
+  .hero h1{font-size:clamp(2.85rem, 11.5vw, 4rem);}
+  .hero .lead{font-size:1.04rem;}
+}
