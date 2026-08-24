@@ -25,3 +25,8 @@ Upload all files and folders to the root of the GitHub repository.
 
 
 V2.4: Social share image fixed with clearer layout and new image filename to reduce WhatsApp cache issues.
+
+
+## V2.5
+- Rebuilt social share card: no text/photo overlap, cleaner WhatsApp preview.
+- Updated Open Graph image to assets/everly-social-share-v25.jpg.
