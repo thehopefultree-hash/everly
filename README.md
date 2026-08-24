@@ -35,3 +35,10 @@ Replace `assets/may-lim-placeholder.jpg` when a better original photo is availab
 ## V1.1 update
 
 Added an optional personal message add-ons section with a placeholder for a future personal video message. Replace the placeholder later when the EVERLY video has been created.
+
+
+## V1.2 update
+
+- Added `share.html` for a cleaner client/social preview link.
+- Improved mobile hero photo spacing/cropping.
+- Adjusted tablet layout so the Wishes Book visual does not get cut off.

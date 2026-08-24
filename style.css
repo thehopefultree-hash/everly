@@ -304,3 +304,130 @@ details p{margin:0;padding:0 48px 24px 6px;color:var(--muted)}
   .compact-list{columns:1}
   .footer{grid-template-columns:1fr}
 }
+
+
+/* V1.2 responsive refinements
+   - More attractive mobile hero
+   - Prevent Wishes Book visual from being cut off on tablet
+   - Add more breathing room on mid-size screens
+*/
+.book-image{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#fbf3e9 0%,#fffdf8 58%,#efe3d4 100%);
+  overflow:hidden;
+  min-height:520px;
+  padding:clamp(24px,4vw,64px);
+}
+.book-image img{
+  height:auto;
+  width:100%;
+  max-height:620px;
+  object-fit:contain;
+  object-position:center center;
+  border-radius:0;
+}
+
+@media (max-width: 1120px){
+  .site-header{
+    gap:22px;
+  }
+  .nav{
+    gap:24px;
+    font-size:13px;
+  }
+  .nav-cta{
+    min-height:46px;
+    padding:11px 18px;
+  }
+  .book-section{
+    grid-template-columns:1fr;
+  }
+  .book-image{
+    min-height:460px;
+  }
+  .book-image img{
+    max-height:520px;
+  }
+}
+
+@media (max-width: 980px){
+  .hero{
+    gap:36px;
+    padding-top:58px;
+    padding-bottom:64px;
+  }
+  .hero-visual{
+    max-width:560px;
+    margin:0 auto;
+    width:100%;
+  }
+  .hero-visual:after,
+  .hero-visual:before{
+    display:none;
+  }
+  .hero-visual img{
+    height:420px;
+    object-fit:contain;
+    object-position:center bottom;
+    background:linear-gradient(180deg,#fffdf8,#f4eadf);
+    padding:18px 18px 0;
+  }
+}
+
+@media (max-width: 640px){
+  .site-header{
+    position:sticky;
+    padding:18px 18px;
+  }
+  .hero{
+    padding-top:52px;
+    padding-bottom:52px;
+    background:
+      radial-gradient(circle at 88% 8%, rgba(212,168,74,.10), transparent 30%),
+      linear-gradient(180deg,#fff9f1 0%,#fffdf8 100%);
+  }
+  .hero-copy{
+    text-align:left;
+  }
+  h1{
+    font-size:clamp(43px,12.5vw,52px);
+    line-height:1.02;
+    letter-spacing:-.035em;
+  }
+  .lead{
+    font-size:17px;
+    margin-top:24px;
+  }
+  .actions{
+    margin-top:28px;
+  }
+  .reassurance{
+    align-items:flex-start;
+    line-height:1.5;
+  }
+  .hero-visual{
+    margin-top:12px;
+  }
+  .hero-visual img{
+    height:auto;
+    max-height:360px;
+    width:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    border-radius:24px;
+    padding:14px 14px 0;
+  }
+  .slim{
+    padding-top:74px;
+    padding-bottom:74px;
+  }
+  .book-image{
+    min-height:auto;
+    padding:28px 18px 42px;
+  }
+  .book-image img{
+    max-height:360px;
+  }
+}
