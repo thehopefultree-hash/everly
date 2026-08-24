@@ -50,3 +50,11 @@ Added an optional personal message add-ons section with a placeholder for a futu
 - May Lim photo remains in the Meet May section.
 - Social share page and social preview image remain included.
 - Tablet Wishes Book visual containment retained.
+
+
+## V1.5 update
+
+- Mobile hero now uses a soft Wishes Book visual at the top.
+- May Lim's placeholder portrait remains hidden from the mobile hero.
+- Hero copy spacing and question section spacing tightened for a less wordy mobile first impression.
+- Social share page and image remain included.
